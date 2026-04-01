@@ -1,80 +1,18 @@
 /* eslint-disable */
-import _wallets_metamask from '../../../../public/images/icons/wallets/metamask.svg?url'
-import _wallets_metamaskSource from '!!raw-loader!../../../../public/images/icons/wallets/metamask.svg'
-import _wallets_walletconnect from '../../../../public/images/icons/wallets/walletconnect.svg?url'
-import _wallets_walletconnectSource from '!!raw-loader!../../../../public/images/icons/wallets/walletconnect.svg'
-import _sport_american_football from '../../../../public/images/icons/sport/american-football.svg?url'
-import _sport_american_footballSource from '!!raw-loader!../../../../public/images/icons/sport/american-football.svg'
-import _sport_baseball from '../../../../public/images/icons/sport/baseball.svg?url'
-import _sport_baseballSource from '!!raw-loader!../../../../public/images/icons/sport/baseball.svg'
-import _sport_basketball from '../../../../public/images/icons/sport/basketball.svg?url'
-import _sport_basketballSource from '!!raw-loader!../../../../public/images/icons/sport/basketball.svg'
-import _sport_beach_volleyball from '../../../../public/images/icons/sport/beach-volleyball.svg?url'
-import _sport_beach_volleyballSource from '!!raw-loader!../../../../public/images/icons/sport/beach-volleyball.svg'
-import _sport_boxing from '../../../../public/images/icons/sport/boxing.svg?url'
-import _sport_boxingSource from '!!raw-loader!../../../../public/images/icons/sport/boxing.svg'
-import _sport_cod from '../../../../public/images/icons/sport/cod.svg?url'
-import _sport_codSource from '!!raw-loader!../../../../public/images/icons/sport/cod.svg'
-import _sport_cricket from '../../../../public/images/icons/sport/cricket.svg?url'
-import _sport_cricketSource from '!!raw-loader!../../../../public/images/icons/sport/cricket.svg'
-import _sport_crypto from '../../../../public/images/icons/sport/crypto.svg?url'
-import _sport_cryptoSource from '!!raw-loader!../../../../public/images/icons/sport/crypto.svg'
-import _sport_cs2 from '../../../../public/images/icons/sport/cs2.svg?url'
-import _sport_cs2Source from '!!raw-loader!../../../../public/images/icons/sport/cs2.svg'
-import _sport_csgo from '../../../../public/images/icons/sport/csgo.svg?url'
-import _sport_csgoSource from '!!raw-loader!../../../../public/images/icons/sport/csgo.svg'
-import _sport_dota_2 from '../../../../public/images/icons/sport/dota-2.svg?url'
-import _sport_dota_2Source from '!!raw-loader!../../../../public/images/icons/sport/dota-2.svg'
-import _sport_esports from '../../../../public/images/icons/sport/esports.svg?url'
-import _sport_esportsSource from '!!raw-loader!../../../../public/images/icons/sport/esports.svg'
-import _sport_football from '../../../../public/images/icons/sport/football.svg?url'
-import _sport_footballSource from '!!raw-loader!../../../../public/images/icons/sport/football.svg'
-import _sport_ice_hockey from '../../../../public/images/icons/sport/ice-hockey.svg?url'
-import _sport_ice_hockeySource from '!!raw-loader!../../../../public/images/icons/sport/ice-hockey.svg'
-import _sport_lol from '../../../../public/images/icons/sport/lol.svg?url'
-import _sport_lolSource from '!!raw-loader!../../../../public/images/icons/sport/lol.svg'
-import _sport_mma from '../../../../public/images/icons/sport/mma.svg?url'
-import _sport_mmaSource from '!!raw-loader!../../../../public/images/icons/sport/mma.svg'
-import _sport_other from '../../../../public/images/icons/sport/other.svg?url'
-import _sport_otherSource from '!!raw-loader!../../../../public/images/icons/sport/other.svg'
-import _sport_politics from '../../../../public/images/icons/sport/politics.svg?url'
-import _sport_politicsSource from '!!raw-loader!../../../../public/images/icons/sport/politics.svg'
-import _sport_pubg from '../../../../public/images/icons/sport/pubg.svg?url'
-import _sport_pubgSource from '!!raw-loader!../../../../public/images/icons/sport/pubg.svg'
-import _sport_rugby_league from '../../../../public/images/icons/sport/rugby-league.svg?url'
-import _sport_rugby_leagueSource from '!!raw-loader!../../../../public/images/icons/sport/rugby-league.svg'
-import _sport_rugby_union from '../../../../public/images/icons/sport/rugby-union.svg?url'
-import _sport_rugby_unionSource from '!!raw-loader!../../../../public/images/icons/sport/rugby-union.svg'
-import _sport_table_tennis from '../../../../public/images/icons/sport/table-tennis.svg?url'
-import _sport_table_tennisSource from '!!raw-loader!../../../../public/images/icons/sport/table-tennis.svg'
-import _sport_tennis from '../../../../public/images/icons/sport/tennis.svg?url'
-import _sport_tennisSource from '!!raw-loader!../../../../public/images/icons/sport/tennis.svg'
-import _sport_volleyball from '../../../../public/images/icons/sport/volleyball.svg?url'
-import _sport_volleyballSource from '!!raw-loader!../../../../public/images/icons/sport/volleyball.svg'
-import _networks_arbitrum from '../../../../public/images/icons/networks/arbitrum.svg?url'
-import _networks_arbitrumSource from '!!raw-loader!../../../../public/images/icons/networks/arbitrum.svg'
-import _networks_base from '../../../../public/images/icons/networks/base.svg?url'
-import _networks_baseSource from '!!raw-loader!../../../../public/images/icons/networks/base.svg'
-import _networks_binance from '../../../../public/images/icons/networks/binance.svg?url'
-import _networks_binanceSource from '!!raw-loader!../../../../public/images/icons/networks/binance.svg'
-import _networks_chiliz from '../../../../public/images/icons/networks/chiliz.svg?url'
-import _networks_chilizSource from '!!raw-loader!../../../../public/images/icons/networks/chiliz.svg'
-import _networks_ethereum from '../../../../public/images/icons/networks/ethereum.svg?url'
-import _networks_ethereumSource from '!!raw-loader!../../../../public/images/icons/networks/ethereum.svg'
-import _networks_gnosis from '../../../../public/images/icons/networks/gnosis.svg?url'
-import _networks_gnosisSource from '!!raw-loader!../../../../public/images/icons/networks/gnosis.svg'
-import _networks_polygon from '../../../../public/images/icons/networks/polygon.svg?url'
-import _networks_polygonSource from '!!raw-loader!../../../../public/images/icons/networks/polygon.svg'
-import _logo_apple_pay from '../../../../public/images/icons/logo/apple_pay.svg?url'
-import _logo_apple_paySource from '!!raw-loader!../../../../public/images/icons/logo/apple_pay.svg'
-import _logo_google_pay from '../../../../public/images/icons/logo/google_pay.svg?url'
-import _logo_google_paySource from '!!raw-loader!../../../../public/images/icons/logo/google_pay.svg'
-import _logo_mastercard from '../../../../public/images/icons/logo/mastercard.svg?url'
-import _logo_mastercardSource from '!!raw-loader!../../../../public/images/icons/logo/mastercard.svg'
-import _logo_paypal from '../../../../public/images/icons/logo/paypal.svg?url'
-import _logo_paypalSource from '!!raw-loader!../../../../public/images/icons/logo/paypal.svg'
-import _logo_visa from '../../../../public/images/icons/logo/visa.svg?url'
-import _logo_visaSource from '!!raw-loader!../../../../public/images/icons/logo/visa.svg'
+import _currency_azusd from '../../../../public/images/icons/currency/azusd.svg?url'
+import _currency_azusdSource from '!!raw-loader!../../../../public/images/icons/currency/azusd.svg'
+import _currency_dai from '../../../../public/images/icons/currency/dai.svg?url'
+import _currency_daiSource from '!!raw-loader!../../../../public/images/icons/currency/dai.svg'
+import _currency_usdc from '../../../../public/images/icons/currency/usdc.svg?url'
+import _currency_usdcSource from '!!raw-loader!../../../../public/images/icons/currency/usdc.svg'
+import _currency_usdt from '../../../../public/images/icons/currency/usdt.svg?url'
+import _currency_usdtSource from '!!raw-loader!../../../../public/images/icons/currency/usdt.svg'
+import _currency_wchz from '../../../../public/images/icons/currency/wchz.svg?url'
+import _currency_wchzSource from '!!raw-loader!../../../../public/images/icons/currency/wchz.svg'
+import _currency_weth from '../../../../public/images/icons/currency/weth.svg?url'
+import _currency_wethSource from '!!raw-loader!../../../../public/images/icons/currency/weth.svg'
+import _currency_wxdai from '../../../../public/images/icons/currency/wxdai.svg?url'
+import _currency_wxdaiSource from '!!raw-loader!../../../../public/images/icons/currency/wxdai.svg'
 import _interface_accepted from '../../../../public/images/icons/interface/accepted.svg?url'
 import _interface_acceptedSource from '!!raw-loader!../../../../public/images/icons/interface/accepted.svg'
 import _interface_alert_triangle from '../../../../public/images/icons/interface/alert_triangle.svg?url'
@@ -181,62 +119,93 @@ import _interface_win from '../../../../public/images/icons/interface/win.svg?ur
 import _interface_winSource from '!!raw-loader!../../../../public/images/icons/interface/win.svg'
 import _interface_withdraw from '../../../../public/images/icons/interface/withdraw.svg?url'
 import _interface_withdrawSource from '!!raw-loader!../../../../public/images/icons/interface/withdraw.svg'
-import _currency_azusd from '../../../../public/images/icons/currency/azusd.svg?url'
-import _currency_azusdSource from '!!raw-loader!../../../../public/images/icons/currency/azusd.svg'
-import _currency_dai from '../../../../public/images/icons/currency/dai.svg?url'
-import _currency_daiSource from '!!raw-loader!../../../../public/images/icons/currency/dai.svg'
-import _currency_usdc from '../../../../public/images/icons/currency/usdc.svg?url'
-import _currency_usdcSource from '!!raw-loader!../../../../public/images/icons/currency/usdc.svg'
-import _currency_usdt from '../../../../public/images/icons/currency/usdt.svg?url'
-import _currency_usdtSource from '!!raw-loader!../../../../public/images/icons/currency/usdt.svg'
-import _currency_wchz from '../../../../public/images/icons/currency/wchz.svg?url'
-import _currency_wchzSource from '!!raw-loader!../../../../public/images/icons/currency/wchz.svg'
-import _currency_weth from '../../../../public/images/icons/currency/weth.svg?url'
-import _currency_wethSource from '!!raw-loader!../../../../public/images/icons/currency/weth.svg'
-import _currency_wxdai from '../../../../public/images/icons/currency/wxdai.svg?url'
-import _currency_wxdaiSource from '!!raw-loader!../../../../public/images/icons/currency/wxdai.svg'
+import _logo_apple_pay from '../../../../public/images/icons/logo/apple_pay.svg?url'
+import _logo_apple_paySource from '!!raw-loader!../../../../public/images/icons/logo/apple_pay.svg'
+import _logo_google_pay from '../../../../public/images/icons/logo/google_pay.svg?url'
+import _logo_google_paySource from '!!raw-loader!../../../../public/images/icons/logo/google_pay.svg'
+import _logo_mastercard from '../../../../public/images/icons/logo/mastercard.svg?url'
+import _logo_mastercardSource from '!!raw-loader!../../../../public/images/icons/logo/mastercard.svg'
+import _logo_paypal from '../../../../public/images/icons/logo/paypal.svg?url'
+import _logo_paypalSource from '!!raw-loader!../../../../public/images/icons/logo/paypal.svg'
+import _logo_visa from '../../../../public/images/icons/logo/visa.svg?url'
+import _logo_visaSource from '!!raw-loader!../../../../public/images/icons/logo/visa.svg'
+import _networks_arbitrum from '../../../../public/images/icons/networks/arbitrum.svg?url'
+import _networks_arbitrumSource from '!!raw-loader!../../../../public/images/icons/networks/arbitrum.svg'
+import _networks_base from '../../../../public/images/icons/networks/base.svg?url'
+import _networks_baseSource from '!!raw-loader!../../../../public/images/icons/networks/base.svg'
+import _networks_binance from '../../../../public/images/icons/networks/binance.svg?url'
+import _networks_binanceSource from '!!raw-loader!../../../../public/images/icons/networks/binance.svg'
+import _networks_chiliz from '../../../../public/images/icons/networks/chiliz.svg?url'
+import _networks_chilizSource from '!!raw-loader!../../../../public/images/icons/networks/chiliz.svg'
+import _networks_ethereum from '../../../../public/images/icons/networks/ethereum.svg?url'
+import _networks_ethereumSource from '!!raw-loader!../../../../public/images/icons/networks/ethereum.svg'
+import _networks_gnosis from '../../../../public/images/icons/networks/gnosis.svg?url'
+import _networks_gnosisSource from '!!raw-loader!../../../../public/images/icons/networks/gnosis.svg'
+import _networks_polygon from '../../../../public/images/icons/networks/polygon.svg?url'
+import _networks_polygonSource from '!!raw-loader!../../../../public/images/icons/networks/polygon.svg'
+import _wallets_metamask from '../../../../public/images/icons/wallets/metamask.svg?url'
+import _wallets_metamaskSource from '!!raw-loader!../../../../public/images/icons/wallets/metamask.svg'
+import _wallets_walletconnect from '../../../../public/images/icons/wallets/walletconnect.svg?url'
+import _wallets_walletconnectSource from '!!raw-loader!../../../../public/images/icons/wallets/walletconnect.svg'
+import _sport_american_football from '../../../../public/images/icons/sport/american-football.svg?url'
+import _sport_american_footballSource from '!!raw-loader!../../../../public/images/icons/sport/american-football.svg'
+import _sport_baseball from '../../../../public/images/icons/sport/baseball.svg?url'
+import _sport_baseballSource from '!!raw-loader!../../../../public/images/icons/sport/baseball.svg'
+import _sport_basketball from '../../../../public/images/icons/sport/basketball.svg?url'
+import _sport_basketballSource from '!!raw-loader!../../../../public/images/icons/sport/basketball.svg'
+import _sport_beach_volleyball from '../../../../public/images/icons/sport/beach-volleyball.svg?url'
+import _sport_beach_volleyballSource from '!!raw-loader!../../../../public/images/icons/sport/beach-volleyball.svg'
+import _sport_boxing from '../../../../public/images/icons/sport/boxing.svg?url'
+import _sport_boxingSource from '!!raw-loader!../../../../public/images/icons/sport/boxing.svg'
+import _sport_cod from '../../../../public/images/icons/sport/cod.svg?url'
+import _sport_codSource from '!!raw-loader!../../../../public/images/icons/sport/cod.svg'
+import _sport_cricket from '../../../../public/images/icons/sport/cricket.svg?url'
+import _sport_cricketSource from '!!raw-loader!../../../../public/images/icons/sport/cricket.svg'
+import _sport_crypto from '../../../../public/images/icons/sport/crypto.svg?url'
+import _sport_cryptoSource from '!!raw-loader!../../../../public/images/icons/sport/crypto.svg'
+import _sport_cs2 from '../../../../public/images/icons/sport/cs2.svg?url'
+import _sport_cs2Source from '!!raw-loader!../../../../public/images/icons/sport/cs2.svg'
+import _sport_csgo from '../../../../public/images/icons/sport/csgo.svg?url'
+import _sport_csgoSource from '!!raw-loader!../../../../public/images/icons/sport/csgo.svg'
+import _sport_dota_2 from '../../../../public/images/icons/sport/dota-2.svg?url'
+import _sport_dota_2Source from '!!raw-loader!../../../../public/images/icons/sport/dota-2.svg'
+import _sport_esports from '../../../../public/images/icons/sport/esports.svg?url'
+import _sport_esportsSource from '!!raw-loader!../../../../public/images/icons/sport/esports.svg'
+import _sport_football from '../../../../public/images/icons/sport/football.svg?url'
+import _sport_footballSource from '!!raw-loader!../../../../public/images/icons/sport/football.svg'
+import _sport_ice_hockey from '../../../../public/images/icons/sport/ice-hockey.svg?url'
+import _sport_ice_hockeySource from '!!raw-loader!../../../../public/images/icons/sport/ice-hockey.svg'
+import _sport_lol from '../../../../public/images/icons/sport/lol.svg?url'
+import _sport_lolSource from '!!raw-loader!../../../../public/images/icons/sport/lol.svg'
+import _sport_mma from '../../../../public/images/icons/sport/mma.svg?url'
+import _sport_mmaSource from '!!raw-loader!../../../../public/images/icons/sport/mma.svg'
+import _sport_other from '../../../../public/images/icons/sport/other.svg?url'
+import _sport_otherSource from '!!raw-loader!../../../../public/images/icons/sport/other.svg'
+import _sport_politics from '../../../../public/images/icons/sport/politics.svg?url'
+import _sport_politicsSource from '!!raw-loader!../../../../public/images/icons/sport/politics.svg'
+import _sport_pubg from '../../../../public/images/icons/sport/pubg.svg?url'
+import _sport_pubgSource from '!!raw-loader!../../../../public/images/icons/sport/pubg.svg'
+import _sport_rugby_league from '../../../../public/images/icons/sport/rugby-league.svg?url'
+import _sport_rugby_leagueSource from '!!raw-loader!../../../../public/images/icons/sport/rugby-league.svg'
+import _sport_rugby_union from '../../../../public/images/icons/sport/rugby-union.svg?url'
+import _sport_rugby_unionSource from '!!raw-loader!../../../../public/images/icons/sport/rugby-union.svg'
+import _sport_table_tennis from '../../../../public/images/icons/sport/table-tennis.svg?url'
+import _sport_table_tennisSource from '!!raw-loader!../../../../public/images/icons/sport/table-tennis.svg'
+import _sport_tennis from '../../../../public/images/icons/sport/tennis.svg?url'
+import _sport_tennisSource from '!!raw-loader!../../../../public/images/icons/sport/tennis.svg'
+import _sport_volleyball from '../../../../public/images/icons/sport/volleyball.svg?url'
+import _sport_volleyballSource from '!!raw-loader!../../../../public/images/icons/sport/volleyball.svg'
 
 const isServer = typeof window === 'undefined'
 
 const icons = {
-  'wallets/metamask': { src: _wallets_metamask.src, source: isServer && _wallets_metamaskSource, width: _wallets_metamask.width, height: _wallets_metamask.height, aspect: _wallets_metamask.width/_wallets_metamask.height }, 
-  'wallets/walletconnect': { src: _wallets_walletconnect.src, source: isServer && _wallets_walletconnectSource, width: _wallets_walletconnect.width, height: _wallets_walletconnect.height, aspect: _wallets_walletconnect.width/_wallets_walletconnect.height }, 
-  'sport/american-football': { src: _sport_american_football.src, source: isServer && _sport_american_footballSource, width: _sport_american_football.width, height: _sport_american_football.height, aspect: _sport_american_football.width/_sport_american_football.height }, 
-  'sport/baseball': { src: _sport_baseball.src, source: isServer && _sport_baseballSource, width: _sport_baseball.width, height: _sport_baseball.height, aspect: _sport_baseball.width/_sport_baseball.height }, 
-  'sport/basketball': { src: _sport_basketball.src, source: isServer && _sport_basketballSource, width: _sport_basketball.width, height: _sport_basketball.height, aspect: _sport_basketball.width/_sport_basketball.height }, 
-  'sport/beach-volleyball': { src: _sport_beach_volleyball.src, source: isServer && _sport_beach_volleyballSource, width: _sport_beach_volleyball.width, height: _sport_beach_volleyball.height, aspect: _sport_beach_volleyball.width/_sport_beach_volleyball.height }, 
-  'sport/boxing': { src: _sport_boxing.src, source: isServer && _sport_boxingSource, width: _sport_boxing.width, height: _sport_boxing.height, aspect: _sport_boxing.width/_sport_boxing.height }, 
-  'sport/cod': { src: _sport_cod.src, source: isServer && _sport_codSource, width: _sport_cod.width, height: _sport_cod.height, aspect: _sport_cod.width/_sport_cod.height }, 
-  'sport/cricket': { src: _sport_cricket.src, source: isServer && _sport_cricketSource, width: _sport_cricket.width, height: _sport_cricket.height, aspect: _sport_cricket.width/_sport_cricket.height }, 
-  'sport/crypto': { src: _sport_crypto.src, source: isServer && _sport_cryptoSource, width: _sport_crypto.width, height: _sport_crypto.height, aspect: _sport_crypto.width/_sport_crypto.height }, 
-  'sport/cs2': { src: _sport_cs2.src, source: isServer && _sport_cs2Source, width: _sport_cs2.width, height: _sport_cs2.height, aspect: _sport_cs2.width/_sport_cs2.height }, 
-  'sport/csgo': { src: _sport_csgo.src, source: isServer && _sport_csgoSource, width: _sport_csgo.width, height: _sport_csgo.height, aspect: _sport_csgo.width/_sport_csgo.height }, 
-  'sport/dota-2': { src: _sport_dota_2.src, source: isServer && _sport_dota_2Source, width: _sport_dota_2.width, height: _sport_dota_2.height, aspect: _sport_dota_2.width/_sport_dota_2.height }, 
-  'sport/esports': { src: _sport_esports.src, source: isServer && _sport_esportsSource, width: _sport_esports.width, height: _sport_esports.height, aspect: _sport_esports.width/_sport_esports.height }, 
-  'sport/football': { src: _sport_football.src, source: isServer && _sport_footballSource, width: _sport_football.width, height: _sport_football.height, aspect: _sport_football.width/_sport_football.height }, 
-  'sport/ice-hockey': { src: _sport_ice_hockey.src, source: isServer && _sport_ice_hockeySource, width: _sport_ice_hockey.width, height: _sport_ice_hockey.height, aspect: _sport_ice_hockey.width/_sport_ice_hockey.height }, 
-  'sport/lol': { src: _sport_lol.src, source: isServer && _sport_lolSource, width: _sport_lol.width, height: _sport_lol.height, aspect: _sport_lol.width/_sport_lol.height }, 
-  'sport/mma': { src: _sport_mma.src, source: isServer && _sport_mmaSource, width: _sport_mma.width, height: _sport_mma.height, aspect: _sport_mma.width/_sport_mma.height }, 
-  'sport/other': { src: _sport_other.src, source: isServer && _sport_otherSource, width: _sport_other.width, height: _sport_other.height, aspect: _sport_other.width/_sport_other.height }, 
-  'sport/politics': { src: _sport_politics.src, source: isServer && _sport_politicsSource, width: _sport_politics.width, height: _sport_politics.height, aspect: _sport_politics.width/_sport_politics.height }, 
-  'sport/pubg': { src: _sport_pubg.src, source: isServer && _sport_pubgSource, width: _sport_pubg.width, height: _sport_pubg.height, aspect: _sport_pubg.width/_sport_pubg.height }, 
-  'sport/rugby-league': { src: _sport_rugby_league.src, source: isServer && _sport_rugby_leagueSource, width: _sport_rugby_league.width, height: _sport_rugby_league.height, aspect: _sport_rugby_league.width/_sport_rugby_league.height }, 
-  'sport/rugby-union': { src: _sport_rugby_union.src, source: isServer && _sport_rugby_unionSource, width: _sport_rugby_union.width, height: _sport_rugby_union.height, aspect: _sport_rugby_union.width/_sport_rugby_union.height }, 
-  'sport/table-tennis': { src: _sport_table_tennis.src, source: isServer && _sport_table_tennisSource, width: _sport_table_tennis.width, height: _sport_table_tennis.height, aspect: _sport_table_tennis.width/_sport_table_tennis.height }, 
-  'sport/tennis': { src: _sport_tennis.src, source: isServer && _sport_tennisSource, width: _sport_tennis.width, height: _sport_tennis.height, aspect: _sport_tennis.width/_sport_tennis.height }, 
-  'sport/volleyball': { src: _sport_volleyball.src, source: isServer && _sport_volleyballSource, width: _sport_volleyball.width, height: _sport_volleyball.height, aspect: _sport_volleyball.width/_sport_volleyball.height }, 
-  'networks/arbitrum': { src: _networks_arbitrum.src, source: isServer && _networks_arbitrumSource, width: _networks_arbitrum.width, height: _networks_arbitrum.height, aspect: _networks_arbitrum.width/_networks_arbitrum.height }, 
-  'networks/base': { src: _networks_base.src, source: isServer && _networks_baseSource, width: _networks_base.width, height: _networks_base.height, aspect: _networks_base.width/_networks_base.height }, 
-  'networks/binance': { src: _networks_binance.src, source: isServer && _networks_binanceSource, width: _networks_binance.width, height: _networks_binance.height, aspect: _networks_binance.width/_networks_binance.height }, 
-  'networks/chiliz': { src: _networks_chiliz.src, source: isServer && _networks_chilizSource, width: _networks_chiliz.width, height: _networks_chiliz.height, aspect: _networks_chiliz.width/_networks_chiliz.height }, 
-  'networks/ethereum': { src: _networks_ethereum.src, source: isServer && _networks_ethereumSource, width: _networks_ethereum.width, height: _networks_ethereum.height, aspect: _networks_ethereum.width/_networks_ethereum.height }, 
-  'networks/gnosis': { src: _networks_gnosis.src, source: isServer && _networks_gnosisSource, width: _networks_gnosis.width, height: _networks_gnosis.height, aspect: _networks_gnosis.width/_networks_gnosis.height }, 
-  'networks/polygon': { src: _networks_polygon.src, source: isServer && _networks_polygonSource, width: _networks_polygon.width, height: _networks_polygon.height, aspect: _networks_polygon.width/_networks_polygon.height }, 
-  'logo/apple_pay': { src: _logo_apple_pay.src, source: isServer && _logo_apple_paySource, width: _logo_apple_pay.width, height: _logo_apple_pay.height, aspect: _logo_apple_pay.width/_logo_apple_pay.height }, 
-  'logo/google_pay': { src: _logo_google_pay.src, source: isServer && _logo_google_paySource, width: _logo_google_pay.width, height: _logo_google_pay.height, aspect: _logo_google_pay.width/_logo_google_pay.height }, 
-  'logo/mastercard': { src: _logo_mastercard.src, source: isServer && _logo_mastercardSource, width: _logo_mastercard.width, height: _logo_mastercard.height, aspect: _logo_mastercard.width/_logo_mastercard.height }, 
-  'logo/paypal': { src: _logo_paypal.src, source: isServer && _logo_paypalSource, width: _logo_paypal.width, height: _logo_paypal.height, aspect: _logo_paypal.width/_logo_paypal.height }, 
-  'logo/visa': { src: _logo_visa.src, source: isServer && _logo_visaSource, width: _logo_visa.width, height: _logo_visa.height, aspect: _logo_visa.width/_logo_visa.height }, 
+  'currency/azusd': { src: _currency_azusd.src, source: isServer && _currency_azusdSource, width: _currency_azusd.width, height: _currency_azusd.height, aspect: _currency_azusd.width/_currency_azusd.height }, 
+  'currency/dai': { src: _currency_dai.src, source: isServer && _currency_daiSource, width: _currency_dai.width, height: _currency_dai.height, aspect: _currency_dai.width/_currency_dai.height }, 
+  'currency/usdc': { src: _currency_usdc.src, source: isServer && _currency_usdcSource, width: _currency_usdc.width, height: _currency_usdc.height, aspect: _currency_usdc.width/_currency_usdc.height }, 
+  'currency/usdt': { src: _currency_usdt.src, source: isServer && _currency_usdtSource, width: _currency_usdt.width, height: _currency_usdt.height, aspect: _currency_usdt.width/_currency_usdt.height }, 
+  'currency/wchz': { src: _currency_wchz.src, source: isServer && _currency_wchzSource, width: _currency_wchz.width, height: _currency_wchz.height, aspect: _currency_wchz.width/_currency_wchz.height }, 
+  'currency/weth': { src: _currency_weth.src, source: isServer && _currency_wethSource, width: _currency_weth.width, height: _currency_weth.height, aspect: _currency_weth.width/_currency_weth.height }, 
+  'currency/wxdai': { src: _currency_wxdai.src, source: isServer && _currency_wxdaiSource, width: _currency_wxdai.width, height: _currency_wxdai.height, aspect: _currency_wxdai.width/_currency_wxdai.height }, 
   'interface/accepted': { src: _interface_accepted.src, source: isServer && _interface_acceptedSource, width: _interface_accepted.width, height: _interface_accepted.height, aspect: _interface_accepted.width/_interface_accepted.height }, 
   'interface/alert_triangle': { src: _interface_alert_triangle.src, source: isServer && _interface_alert_triangleSource, width: _interface_alert_triangle.width, height: _interface_alert_triangle.height, aspect: _interface_alert_triangle.width/_interface_alert_triangle.height }, 
   'interface/arrow_back': { src: _interface_arrow_back.src, source: isServer && _interface_arrow_backSource, width: _interface_arrow_back.width, height: _interface_arrow_back.height, aspect: _interface_arrow_back.width/_interface_arrow_back.height }, 
@@ -290,13 +259,44 @@ const icons = {
   'interface/warning': { src: _interface_warning.src, source: isServer && _interface_warningSource, width: _interface_warning.width, height: _interface_warning.height, aspect: _interface_warning.width/_interface_warning.height }, 
   'interface/win': { src: _interface_win.src, source: isServer && _interface_winSource, width: _interface_win.width, height: _interface_win.height, aspect: _interface_win.width/_interface_win.height }, 
   'interface/withdraw': { src: _interface_withdraw.src, source: isServer && _interface_withdrawSource, width: _interface_withdraw.width, height: _interface_withdraw.height, aspect: _interface_withdraw.width/_interface_withdraw.height }, 
-  'currency/azusd': { src: _currency_azusd.src, source: isServer && _currency_azusdSource, width: _currency_azusd.width, height: _currency_azusd.height, aspect: _currency_azusd.width/_currency_azusd.height }, 
-  'currency/dai': { src: _currency_dai.src, source: isServer && _currency_daiSource, width: _currency_dai.width, height: _currency_dai.height, aspect: _currency_dai.width/_currency_dai.height }, 
-  'currency/usdc': { src: _currency_usdc.src, source: isServer && _currency_usdcSource, width: _currency_usdc.width, height: _currency_usdc.height, aspect: _currency_usdc.width/_currency_usdc.height }, 
-  'currency/usdt': { src: _currency_usdt.src, source: isServer && _currency_usdtSource, width: _currency_usdt.width, height: _currency_usdt.height, aspect: _currency_usdt.width/_currency_usdt.height }, 
-  'currency/wchz': { src: _currency_wchz.src, source: isServer && _currency_wchzSource, width: _currency_wchz.width, height: _currency_wchz.height, aspect: _currency_wchz.width/_currency_wchz.height }, 
-  'currency/weth': { src: _currency_weth.src, source: isServer && _currency_wethSource, width: _currency_weth.width, height: _currency_weth.height, aspect: _currency_weth.width/_currency_weth.height }, 
-  'currency/wxdai': { src: _currency_wxdai.src, source: isServer && _currency_wxdaiSource, width: _currency_wxdai.width, height: _currency_wxdai.height, aspect: _currency_wxdai.width/_currency_wxdai.height }
+  'logo/apple_pay': { src: _logo_apple_pay.src, source: isServer && _logo_apple_paySource, width: _logo_apple_pay.width, height: _logo_apple_pay.height, aspect: _logo_apple_pay.width/_logo_apple_pay.height }, 
+  'logo/google_pay': { src: _logo_google_pay.src, source: isServer && _logo_google_paySource, width: _logo_google_pay.width, height: _logo_google_pay.height, aspect: _logo_google_pay.width/_logo_google_pay.height }, 
+  'logo/mastercard': { src: _logo_mastercard.src, source: isServer && _logo_mastercardSource, width: _logo_mastercard.width, height: _logo_mastercard.height, aspect: _logo_mastercard.width/_logo_mastercard.height }, 
+  'logo/paypal': { src: _logo_paypal.src, source: isServer && _logo_paypalSource, width: _logo_paypal.width, height: _logo_paypal.height, aspect: _logo_paypal.width/_logo_paypal.height }, 
+  'logo/visa': { src: _logo_visa.src, source: isServer && _logo_visaSource, width: _logo_visa.width, height: _logo_visa.height, aspect: _logo_visa.width/_logo_visa.height }, 
+  'networks/arbitrum': { src: _networks_arbitrum.src, source: isServer && _networks_arbitrumSource, width: _networks_arbitrum.width, height: _networks_arbitrum.height, aspect: _networks_arbitrum.width/_networks_arbitrum.height }, 
+  'networks/base': { src: _networks_base.src, source: isServer && _networks_baseSource, width: _networks_base.width, height: _networks_base.height, aspect: _networks_base.width/_networks_base.height }, 
+  'networks/binance': { src: _networks_binance.src, source: isServer && _networks_binanceSource, width: _networks_binance.width, height: _networks_binance.height, aspect: _networks_binance.width/_networks_binance.height }, 
+  'networks/chiliz': { src: _networks_chiliz.src, source: isServer && _networks_chilizSource, width: _networks_chiliz.width, height: _networks_chiliz.height, aspect: _networks_chiliz.width/_networks_chiliz.height }, 
+  'networks/ethereum': { src: _networks_ethereum.src, source: isServer && _networks_ethereumSource, width: _networks_ethereum.width, height: _networks_ethereum.height, aspect: _networks_ethereum.width/_networks_ethereum.height }, 
+  'networks/gnosis': { src: _networks_gnosis.src, source: isServer && _networks_gnosisSource, width: _networks_gnosis.width, height: _networks_gnosis.height, aspect: _networks_gnosis.width/_networks_gnosis.height }, 
+  'networks/polygon': { src: _networks_polygon.src, source: isServer && _networks_polygonSource, width: _networks_polygon.width, height: _networks_polygon.height, aspect: _networks_polygon.width/_networks_polygon.height }, 
+  'wallets/metamask': { src: _wallets_metamask.src, source: isServer && _wallets_metamaskSource, width: _wallets_metamask.width, height: _wallets_metamask.height, aspect: _wallets_metamask.width/_wallets_metamask.height }, 
+  'wallets/walletconnect': { src: _wallets_walletconnect.src, source: isServer && _wallets_walletconnectSource, width: _wallets_walletconnect.width, height: _wallets_walletconnect.height, aspect: _wallets_walletconnect.width/_wallets_walletconnect.height }, 
+  'sport/american-football': { src: _sport_american_football.src, source: isServer && _sport_american_footballSource, width: _sport_american_football.width, height: _sport_american_football.height, aspect: _sport_american_football.width/_sport_american_football.height }, 
+  'sport/baseball': { src: _sport_baseball.src, source: isServer && _sport_baseballSource, width: _sport_baseball.width, height: _sport_baseball.height, aspect: _sport_baseball.width/_sport_baseball.height }, 
+  'sport/basketball': { src: _sport_basketball.src, source: isServer && _sport_basketballSource, width: _sport_basketball.width, height: _sport_basketball.height, aspect: _sport_basketball.width/_sport_basketball.height }, 
+  'sport/beach-volleyball': { src: _sport_beach_volleyball.src, source: isServer && _sport_beach_volleyballSource, width: _sport_beach_volleyball.width, height: _sport_beach_volleyball.height, aspect: _sport_beach_volleyball.width/_sport_beach_volleyball.height }, 
+  'sport/boxing': { src: _sport_boxing.src, source: isServer && _sport_boxingSource, width: _sport_boxing.width, height: _sport_boxing.height, aspect: _sport_boxing.width/_sport_boxing.height }, 
+  'sport/cod': { src: _sport_cod.src, source: isServer && _sport_codSource, width: _sport_cod.width, height: _sport_cod.height, aspect: _sport_cod.width/_sport_cod.height }, 
+  'sport/cricket': { src: _sport_cricket.src, source: isServer && _sport_cricketSource, width: _sport_cricket.width, height: _sport_cricket.height, aspect: _sport_cricket.width/_sport_cricket.height }, 
+  'sport/crypto': { src: _sport_crypto.src, source: isServer && _sport_cryptoSource, width: _sport_crypto.width, height: _sport_crypto.height, aspect: _sport_crypto.width/_sport_crypto.height }, 
+  'sport/cs2': { src: _sport_cs2.src, source: isServer && _sport_cs2Source, width: _sport_cs2.width, height: _sport_cs2.height, aspect: _sport_cs2.width/_sport_cs2.height }, 
+  'sport/csgo': { src: _sport_csgo.src, source: isServer && _sport_csgoSource, width: _sport_csgo.width, height: _sport_csgo.height, aspect: _sport_csgo.width/_sport_csgo.height }, 
+  'sport/dota-2': { src: _sport_dota_2.src, source: isServer && _sport_dota_2Source, width: _sport_dota_2.width, height: _sport_dota_2.height, aspect: _sport_dota_2.width/_sport_dota_2.height }, 
+  'sport/esports': { src: _sport_esports.src, source: isServer && _sport_esportsSource, width: _sport_esports.width, height: _sport_esports.height, aspect: _sport_esports.width/_sport_esports.height }, 
+  'sport/football': { src: _sport_football.src, source: isServer && _sport_footballSource, width: _sport_football.width, height: _sport_football.height, aspect: _sport_football.width/_sport_football.height }, 
+  'sport/ice-hockey': { src: _sport_ice_hockey.src, source: isServer && _sport_ice_hockeySource, width: _sport_ice_hockey.width, height: _sport_ice_hockey.height, aspect: _sport_ice_hockey.width/_sport_ice_hockey.height }, 
+  'sport/lol': { src: _sport_lol.src, source: isServer && _sport_lolSource, width: _sport_lol.width, height: _sport_lol.height, aspect: _sport_lol.width/_sport_lol.height }, 
+  'sport/mma': { src: _sport_mma.src, source: isServer && _sport_mmaSource, width: _sport_mma.width, height: _sport_mma.height, aspect: _sport_mma.width/_sport_mma.height }, 
+  'sport/other': { src: _sport_other.src, source: isServer && _sport_otherSource, width: _sport_other.width, height: _sport_other.height, aspect: _sport_other.width/_sport_other.height }, 
+  'sport/politics': { src: _sport_politics.src, source: isServer && _sport_politicsSource, width: _sport_politics.width, height: _sport_politics.height, aspect: _sport_politics.width/_sport_politics.height }, 
+  'sport/pubg': { src: _sport_pubg.src, source: isServer && _sport_pubgSource, width: _sport_pubg.width, height: _sport_pubg.height, aspect: _sport_pubg.width/_sport_pubg.height }, 
+  'sport/rugby-league': { src: _sport_rugby_league.src, source: isServer && _sport_rugby_leagueSource, width: _sport_rugby_league.width, height: _sport_rugby_league.height, aspect: _sport_rugby_league.width/_sport_rugby_league.height }, 
+  'sport/rugby-union': { src: _sport_rugby_union.src, source: isServer && _sport_rugby_unionSource, width: _sport_rugby_union.width, height: _sport_rugby_union.height, aspect: _sport_rugby_union.width/_sport_rugby_union.height }, 
+  'sport/table-tennis': { src: _sport_table_tennis.src, source: isServer && _sport_table_tennisSource, width: _sport_table_tennis.width, height: _sport_table_tennis.height, aspect: _sport_table_tennis.width/_sport_table_tennis.height }, 
+  'sport/tennis': { src: _sport_tennis.src, source: isServer && _sport_tennisSource, width: _sport_tennis.width, height: _sport_tennis.height, aspect: _sport_tennis.width/_sport_tennis.height }, 
+  'sport/volleyball': { src: _sport_volleyball.src, source: isServer && _sport_volleyballSource, width: _sport_volleyball.width, height: _sport_volleyball.height, aspect: _sport_volleyball.width/_sport_volleyball.height }
 } as const
 
 export type IconName = keyof typeof icons

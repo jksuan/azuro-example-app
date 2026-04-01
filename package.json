@@ -6,7 +6,7 @@
   },
   "private": true,
   "scripts": {
-    "dev": "npm run watch-icons & next dev",
+    "dev": "cross-env NODE_OPTIONS=\"--max-old-space-size=8192 --require=./scripts/fix-watchpack.js\" next dev",
     "build": "npm run build-icons && next build",
     "start": "next start",
     "lint-ts": "tsc --noEmit",
@@ -55,6 +55,8 @@
     "app-module-path": "2.2.0",
     "autoprefixer": "10.4.21",
     "chokidar": "3.6.0",
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0",
     "encoding": "0.1.13",
     "eslint": "^8",
     "eslint-config-next": "15.5.9",
