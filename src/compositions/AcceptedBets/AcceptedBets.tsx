@@ -37,7 +37,7 @@ const AcceptedBets: React.FC = () => {
     filter: {
       bettor: address!,
       type: BetType.Accepted,
-      affiliate: process.env.NEXT_PUBLIC_AFFILIATE_ADDRESS as Address,
+      affiliate: (process.env.NEXT_PUBLIC_AFFILIATE_ADDRESS as string)?.toLowerCase() as Address,
     },
     itemsPerPage: 500,
   }
