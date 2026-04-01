@@ -521,6 +521,9 @@ const Content: React.FC<ContentProps> = ({ tab }) => {
       type: tab,
       affiliate: (process.env.NEXT_PUBLIC_AFFILIATE_ADDRESS as string)?.toLowerCase() as Address,
     },
+    query: {
+      refetchOnMount: 'always' as const,
+    },
   }
 
   const betsQuery = useBets(props)

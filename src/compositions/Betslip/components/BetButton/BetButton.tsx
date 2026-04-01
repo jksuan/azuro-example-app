@@ -8,6 +8,7 @@ import { Message } from '@locmod/intl'
 import { useAccount } from '@azuro-org/sdk-social-aa-connector'
 import { openModal } from '@locmod/modal'
 import localStorage from '@locmod/local-storage'
+import { useQueryClient } from '@tanstack/react-query'
 import { constants, isUserRejectedRequestError, toLocaleString } from 'helpers'
 
 import { Icon } from 'components/ui'
@@ -25,6 +26,7 @@ const BetButton: React.FC<BetButtonProps> = ({ isEnoughBalance, isBalanceFetchin
   const { address } = useAccount()
   const { betToken } = useChain()
   const { items, clear } = useBaseBetslip()
+  const queryClient = useQueryClient()
   const {
     betAmount, odds, totalOdds, selectedFreebet,
     isBetAllowed, isOddsFetching, isStatesFetching, isMaxBetFetching,
@@ -56,6 +58,22 @@ const BetButton: React.FC<BetButtonProps> = ({ isEnoughBalance, isBalanceFetchin
     totalOdds,
     freebet: selectedFreebet,
     onSuccess: () => {
+      // WORKAROUND: Subgraph 索引有延迟（通常 3~15 秒），下注成功时数据可能尚未入库。
+      // 通过延迟多次 invalidate 来确保最终能拿到最新下注记录。
+      const invalidateBets = () => {
+        queryClient.invalidateQueries({
+          predicate: ({ queryKey }) =>
+            queryKey[0] === 'bets' || queryKey[0] === 'bets-summary',
+        })
+      }
+
+      // 立即尝试一次
+      invalidateBets()
+      // 延迟 3s / 6s / 10s 再各尝试一次，等 Subgraph 索引完成
+      setTimeout(invalidateBets, 3000)
+      setTimeout(invalidateBets, 6000)
+      setTimeout(invalidateBets, 10000)
+
       openModal('SuccessModal', {
         title: messages.success.title,
       })

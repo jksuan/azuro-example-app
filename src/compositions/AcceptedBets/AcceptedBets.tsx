@@ -40,6 +40,9 @@ const AcceptedBets: React.FC = () => {
       affiliate: (process.env.NEXT_PUBLIC_AFFILIATE_ADDRESS as string)?.toLowerCase() as Address,
     },
     itemsPerPage: 500,
+    query: {
+      refetchOnMount: 'always' as const,
+    },
   }
   const { data, isLoading } = useBets(props)
 
