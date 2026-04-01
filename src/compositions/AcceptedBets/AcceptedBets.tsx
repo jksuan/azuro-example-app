@@ -42,6 +42,7 @@ const AcceptedBets: React.FC = () => {
     itemsPerPage: 500,
     query: {
       refetchOnMount: 'always' as const,
+      refetchInterval: 30000, // 每 30 秒自动刷新，确保已结算的订单及时消失
     },
   }
   const { data, isLoading } = useBets(props)
