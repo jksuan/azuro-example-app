@@ -10,7 +10,7 @@ import cx from 'classnames'
 import { openModal } from '@locmod/modal'
 import { useAccount } from '@azuro-org/sdk-social-aa-connector'
 import { useEntry } from '@locmod/intersection-observer'
-import { type InfiniteData, type UseInfiniteQueryResult } from '@tanstack/react-query'
+import { type InfiniteData, type UseInfiniteQueryResult, useQueryClient } from '@tanstack/react-query'
 import { type Address } from 'viem'
 import { toLocaleString } from 'helpers'
 import { getGameDateTime } from 'helpers/getters'
@@ -204,6 +204,7 @@ const Bet: React.FC<BetProps> = ({ bet }) => {
 
   const { betToken, appChain } = useChain()
   const { submit, isPending, isProcessing } = useRedeemBet()
+  const queryClient = useQueryClient()
 
   const isFreeBet = Boolean(freebetId)
 
@@ -262,8 +263,19 @@ const Bet: React.FC<BetProps> = ({ bet }) => {
   const handleRedeem = async () => {
     try {
       await submit({ bets: [ bet ] })
+      // WORKAROUND: Subgraph 索引有延迟，领奖成功后 isRedeemed 不会立即变为 true，
+      // 导致 REDEEM 按钮重新出现。延迟多次 invalidate 等待 Subgraph 完成索引。
+      const invalidateBets = () => {
+        queryClient.invalidateQueries({
+          predicate: ({ queryKey }) => queryKey[0] === 'bets',
+        })
+      }
+      invalidateBets()
+      setTimeout(invalidateBets, 3000)
+      setTimeout(invalidateBets, 6000)
+      setTimeout(invalidateBets, 10000)
     }
-    catch {}
+    catch (err) {}
   }
 
   return (
