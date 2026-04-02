@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useMemo, useState, useEffect } from 'react'
-import { useParams } from 'next/navigation'
+import { useParams, usePathname } from 'next/navigation'
 import { Message } from '@locmod/intl'
 import { useLive, useNavigation } from '@azuro-org/sdk'
 import { type NavigationSportData } from '@azuro-org/toolkit'
@@ -66,9 +66,10 @@ const Sport: React.FC<SportProps> = (props) => {
   const { gamesCount } = props as Top
 
   const { sportSlug } = useParams()
+  const pathname = usePathname()
 
   const isTop = slug === '/'
-  const isActive = sportSlug === slug || isTop && !sportSlug
+  const isActive = sportSlug === slug || (isTop && pathname === '/')
   const isUnique = slug === 'unique'
 
   const [isExpanded, setIsExpanded] = useState(isActive)
