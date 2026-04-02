@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useMemo } from 'react'
+import React, { useMemo, useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import { Message } from '@locmod/intl'
 import { useLive, useNavigation } from '@azuro-org/sdk'
@@ -71,16 +71,29 @@ const Sport: React.FC<SportProps> = (props) => {
   const isActive = sportSlug === slug || isTop && !sportSlug
   const isUnique = slug === 'unique'
 
+  const [isExpanded, setIsExpanded] = useState(isActive)
+
+  useEffect(() => {
+    setIsExpanded(isActive)
+  }, [isActive])
+
+  const handleToggle = (e: React.MouseEvent) => {
+    if (isActive) {
+      e.preventDefault()
+      setIsExpanded(prev => !prev)
+    }
+  }
+
   const rootClassName = cx('p-px rounded-md overflow-hidden', {
     'bg-card-border-top': isActive,
   })
   const wrapperClassName = cx({ 'bg-bg-l1 rounded-md': isActive })
-  const buttonClassName = cx('group px-4 py-2 flex w-full items-center justify-between hover:text-brand-50', {
+  const buttonClassName = cx('group px-4 py-2 flex w-full items-center justify-between hover:text-brand-50 transition-colors', {
     'text-grey-60': !isActive,
     'text-brand-50': isActive,
   })
-  const iconClassName = cx('h-4 w-4', {
-    'rotate-180': isActive,
+  const iconClassName = cx('h-4 w-4 transition-transform', {
+    'rotate-180': isExpanded,
   })
   const icon: IconName = isTop || isUnique ? 'interface/top' : `sport/${slug}` as IconName
 
@@ -104,9 +117,9 @@ const Sport: React.FC<SportProps> = (props) => {
   return (
     <div className={rootClassName}>
       <div className={wrapperClassName}>
-        <Href to={`/${slug}`} className={buttonClassName}>
+        <Href to={`/${slug}`} className={buttonClassName} onClick={handleToggle}>
           <div className="flex items-center">
-            <Icon className="size-4 mr-2" name={icon} />
+            <Icon className="size-4 mr-2 transition-transform" name={icon} />
             <Message className="text-caption-13" value={name} />
           </div>
           {
@@ -118,7 +131,7 @@ const Sport: React.FC<SportProps> = (props) => {
           }
         </Href>
         {
-          Boolean(!isUnique && isActive && leagues) && (
+          Boolean(!isUnique && isExpanded && leagues) && (
             leagues?.map((league) => (
               <League key={`${league.country.slug}-${league.slug}`} {...league} />
             ))
