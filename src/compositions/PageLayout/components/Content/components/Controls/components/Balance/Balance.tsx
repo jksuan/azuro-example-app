@@ -161,7 +161,7 @@ const BalanceInfo: React.FC = () => {
               <div className="bone h-4 w-10 rounded-full" />
             ) : (
               <div className="text-caption-13 font-semibold">
-                {toLocaleString(toPayout || 0, { digits: 2 })} {betToken.symbol}
+                {toLocaleString(Math.max(0, Number(toPayout || 0)), { digits: 2 })} {betToken.symbol}
               </div>
             )
           }
