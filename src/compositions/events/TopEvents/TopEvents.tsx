@@ -135,7 +135,7 @@ const sliderConfiguration = {
 
 const Events: React.FC = () => {
   const { data, isFetching } = useGames({
-    perPage: 9,
+    perPage: 10,
     orderBy: GameOrderBy.Turnover,
   })
   const containerRef = useRef<HTMLDivElement>(null)
